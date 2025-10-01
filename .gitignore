@@ -30,3 +30,13 @@ livestreams.dat
 .vite/deps
 archive.txt
 twitch-monitor.dat
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
