@@ -1,6 +1,6 @@
 module github.com/marcopiovanello/yt-dlp-web-ui/v3
 
-go 1.22
+go 1.22.0
 
 require (
 	github.com/asaskevich/EventBus v0.0.0-20200907212545-49d423059eef
