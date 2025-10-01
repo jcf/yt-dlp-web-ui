@@ -1,9 +1,9 @@
-{ yt-dlp-web-ui-frontend, buildGoModule, lib, makeWrapper, yt-dlp, ... }:
+{ yt-dlp-web-ui-frontend, buildGoModule, go_1_24, lib, makeWrapper, yt-dlp, ... }:
 let
   fs = lib.fileset;
   common = import ./common.nix { inherit lib; };
 in
-buildGoModule {
+buildGoModule.override { go = go_1_24; } {
   pname = "yt-dlp-web-ui";
   inherit (common) version;
   src = fs.toSource rec {
